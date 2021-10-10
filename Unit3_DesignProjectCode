@@ -1,0 +1,72 @@
+//Start quiz and Sound
+onEvent("StartButton", "click", function() {
+  console.log("Program Starting");
+	setScreen("2-GoldenDoodle");
+	playSound("Nicki_Minaj_-_Super_Bass.mp3", false);
+});
+//QUESTION 1: Correct answer
+onEvent("GoldenDoodleButton", "click", function() {
+  setScreen("3-Komondor");
+});
+//QUESTION 1: Incorrect answers
+onEvent("ChocolateLabButton", "click", function() {
+  setScreen("8-TryAgain");
+});
+onEvent("GermanShepardButton", "click", function() {
+  setScreen("8-TryAgain");
+});
+onEvent("MiniSchnauzerButton", "click", function() {
+  setScreen("8-TryAgain");
+});
+//QUESTION 2: Correct answer
+onEvent("KomondorButton", "click", function() {
+  setScreen("4-Doberman");
+});
+//QUESTION 2: Incorrect answers
+onEvent("AfghanHound", "click", function() {
+  setScreen("8-TryAgain");
+});
+onEvent("EnglishSpringerSpaniel", "click", function() {
+  setScreen("8-TryAgain");
+});
+onEvent("BullMastiff", "click", function() {
+  setScreen("8-TryAgain");
+});
+//QUESTION 3: Correct answer
+onEvent("DobermanPic", "click", function() {
+  setScreen("5-Papillion");
+});
+//QUESTION 3: Incorrect answers
+onEvent("Beagle", "click", function() {
+  setScreen("8-TryAgain");
+});
+onEvent("BichonFrise", "click", function() {
+  setScreen("7-TryAgain");
+});
+onEvent("Pitbull", "click", function() {
+  setScreen("8-TryAgain");
+});
+
+//QUESTION 4: Correct answer
+onEvent("PapillionButton", "click", function() {
+  setScreen("6-Corgi");
+});
+//QUESTION 4: Incorrect Answers
+onEvent("CockerSpanielButton", "click", function() {
+  setScreen("8-TryAgain");
+});
+onEvent("HuskyButton", "click", function() {
+  setScreen("7-TryAgain");
+});
+onEvent("BoxerButton", "click", function() {
+  setScreen("8-TryAgain");
+});
+//QUESTION 5: Correct answer
+onEvent("6-Corgi", "click", function( ) {
+  setScreen("7-EndScreen");
+  console.log("Program Ending");
+});
+//TryAgain Page
+onEvent("TryAgainButton", "click", function( ) {
+  setScreen("1-IntroScreen");
+});
