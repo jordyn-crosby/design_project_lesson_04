@@ -68,5 +68,6 @@ onEvent("6-Corgi", "click", function( ) {
 });
 //TryAgain Page
 onEvent("TryAgainButton", "click", function( ) {
+  stopSound("Nicki_Minaj_-_Super_Bass.mp3");
   setScreen("1-IntroScreen");
 });
