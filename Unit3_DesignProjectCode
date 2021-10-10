@@ -41,7 +41,7 @@ onEvent("Beagle", "click", function() {
   setScreen("8-TryAgain");
 });
 onEvent("BichonFrise", "click", function() {
-  setScreen("7-TryAgain");
+  setScreen("8-TryAgain");
 });
 onEvent("Pitbull", "click", function() {
   setScreen("8-TryAgain");
@@ -56,15 +56,25 @@ onEvent("CockerSpanielButton", "click", function() {
   setScreen("8-TryAgain");
 });
 onEvent("HuskyButton", "click", function() {
-  setScreen("7-TryAgain");
+  setScreen("8-TryAgain");
 });
 onEvent("BoxerButton", "click", function() {
   setScreen("8-TryAgain");
 });
 //QUESTION 5: Correct answer
-onEvent("6-Corgi", "click", function( ) {
+onEvent("PembrookeWelshCorgi", "click", function( ) {
   setScreen("7-EndScreen");
   console.log("Program Ending");
+});
+//QUESTION 5: Incorrect Answers
+onEvent("GoldenLab", "click", function() {
+  setScreen("8-TryAgain");
+});
+onEvent("Poodle", "click", function() {
+  setScreen("8-TryAgain");
+});
+onEvent("GoldenRetriever", "click", function() {
+  setScreen("8-TryAgain");
 });
 //TryAgain Page
 onEvent("TryAgainButton", "click", function( ) {
